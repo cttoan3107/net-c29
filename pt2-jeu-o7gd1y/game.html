@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Game Canvas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="game_style.css">
+</head>
+
+<body>
+
+  <h1>NET-C29</h1>
+  <select id="type-select" onchange="onSelectGrid()">
+    <option disabled selected>Type</option>
+    <option value="5x5">5×5</option>
+    <option value="7x7">7×7</option>
+    <option value="9x9">9×9</option>
+    <option value="11x11">11×11</option>
+    <option value="13x11">13×11</option>
+    <option value="5x5w">5×5 wrapping</option>
+    <option value="7x7w">7×7 wrapping</option>
+    <option value="9x9w">9×9 wrapping</option>
+    <option value="11x11w">11×11 wrapping</option>
+    <option value="11x13w">13×11 wrapping</option>
+    <option value="custom">Custom...</option>
+  </select> 
+
+  <div id="custom-box" class="hidden">
+    <div class="custom-content">
+      <h3>Enter Custom Grid Size</h3>
+      <input type="number" id="custom-rows" placeholder="Rows" min="2" max="20">
+      <input type="number" id="custom-cols" placeholder="Cols" min="2" max="20">
+      <br><br>
+      <button onclick="createCustomGrid()">Generate</button>
+      <button onclick="toggleCustomBox()">Cancel</button>
+    </div>
+  </div>
+
+  <div>
+    <button onclick="onNewGame()">New Game</button>
+    <button onclick="onRestart()">Restart</button>
+    <button onclick="onUndo()">Undo</button>
+    <button onclick="onRedo()">Redo</button>
+    <button onclick="onCheck()">Check</button>
+    <button onclick="onSolve()">Solve</button>
+  </div>
+
+  <p id="grid-size" class="grid-info"></p>
+  <canvas id="canvas"></canvas>
+  <script src="game.js"></script>
+  <script src="game_canvas.js"></script>
+
+  <br>
+  <button id="wrap-button" onclick="onToggleWrapping()">Wrapping: ON</button>
+  
+  <br>
+  <p id="help-toggle" onclick="toggleHelp()" style="cursor: pointer;"> Click to help</p>
+
+  <div id="help-box" class="help-box hidden">
+      <div class="help-content">
+      <h2> Game Rules </h2>
+      <ul>
+        <li><strong>Goal</strong>: Connect all the pieces without any errors</li>
+        <li><strong>New Game</strong>: Generate a new random grid</li>
+        <li><strong>Restart</strong>: Shuffle the current grid</li>
+        <li><strong>Undo</strong>: Undo the last move</li>
+        <li><strong>Redo</strong>: Redo the previously undone move</li>
+        <li><strong>Check</strong>: Highlight wrongly connected edges</li>
+        <li><strong>Solve</strong>: Automatically solve the puzzle</li>
+        <li><strong>Wrapping</strong>: 
+          <br>
+          <strong>ON</strong> – Opposite edges are connected (torus mode)
+          <br>
+          <strong>OFF</strong>– Edges are disconnected (classic mode)</li>
+      </ul>
+      <p class="help-tip">Press <strong>H</strong> to open or close this help</p>
+      <button onclick="toggleHelp()">OK</button>
+    </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+Nous avons utilisé une partie du code de la fonction solve_recursive mais je peux plus trouvé ce block du code où il vient. Je me souviens pas la personne qui m'as donnné ce partie du code. J'ai essayé de chercher messsages mais j'ai vraiment pas trouver.
+j'ai utilisé son code en l'adaptant légèrement (renommage de variables, indentation, etc.).
+Le commit exact est difficile à identifier avec certitude, mais nous pensons que cela correspond au commit a2dd2fa.
+Nous n'avons pas réalisé à ce moment-là que cela violait les consignes.
+
+Avec le rendu Game Random, on a pris la fonction get_random_non_null_cell et puis modifie pour adapter notre programme. 

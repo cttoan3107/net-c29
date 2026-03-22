@@ -1,0 +1,20 @@
+URL de rendu :
+https://myhanh-dinh.emi.u-bordeaux.fr/pt2-jeu-o7gd1y/
+https://toan-cao.emi.u-bordeaux.fr/pt2-jeu-o7gd1y/
+
+Commentaires :
+- Projet Web interactif avec <canvas> et WebAssembly
+- Fonctions : 
+    - Génération de grilles aléatoires et personnalisées (2x2 à 20x20)
+    - Affichage interactif via canvas 
+    - Résolution automatique
+    - Vérification des erreurs de connexion
+    - Annulation / rétablissement de coups
+    - Mélange de la grille
+    - Changement de mode wrapping ON / OFF
+    - Interface responsive et adaptée aux écrans
+    - Affichage de victoire avec animation 
+    - Menu d'aide (touches clavier, boutons, aide visuelle)
+- Compatible desktop et mobile
+- Réalisé par My Hanh DINH, Toan CAO
+- Université de Bordeaux – L2 Informatique

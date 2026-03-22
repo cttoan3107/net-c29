@@ -1,0 +1,155 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  background-image: url('photos/background1.png');
+  background-size: cover;
+  font-family: 'Retropix', monospace;
+}
+
+h1{
+  font-size: 5vmin;
+  color: #ffffff;
+  padding: 1vmin 2vmin;
+  display: inline-block;
+  border-radius: 30vmin;
+  background-color:  #ff00f7;
+}
+
+select {
+  font-size: 2.5vmin;
+  text-align: center;
+  padding: 0.5vmin 1vmin;
+  border-radius: 30vmin;
+  background-color: #ff00f7;
+  color: white;
+  border: none;
+  margin: 5px;
+  font-family: 'Retropix', monospace;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#custom-box {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.custom-content {
+  background: white;
+  color: #ff00f7;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 2vmin;
+}
+
+.custom-content input {
+  font-size: 2vmin;
+  padding: 0.5vmin;
+  margin: 0.5vmin;
+  width: 6rem;
+}
+
+.custom-content button {
+  font-size: 2vmin;
+  margin: 0.5vmin;
+  padding: 0.5vmin 1vmin;
+  background: #ff00f7;
+  color: white;
+  border: none;
+  border-radius: 5pvmin;
+}
+
+button {
+  margin: 5px;
+  font-size: 2.5vmin;
+  padding: 0.5vmin 1vmin;
+  border-radius: 30vmin;
+  border: none;
+  background-color: #ff00f7;
+  color: white;
+  cursor: pointer;
+  font-family: 'Retropix', monospace;
+}
+
+button:hover {
+  background-color: rgb(25, 9, 252);
+}
+
+.grid-info {
+  font-size: 4vmin;
+  color: #ff00f7;
+  margin-top: 1.5vmin;
+  margin-bottom: 1vmin;
+}
+
+p{
+  font-size: 3vmin;
+  color: #ff00f7;
+}
+
+canvas {
+  width: 60vmin;
+  max-width: 100%;
+}
+
+#help-box {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.help-content {
+  background: rgb(255, 255, 255);
+  color: #ff00f7;
+  padding: 2rem;
+  max-width: 90%;
+  border-radius: 10px;
+  font-size: 3vmin;
+  text-align: left;
+}
+
+#help-box button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 2vmin;
+  background-color: hsl(0, 0%, 5%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.help-tip {
+  font-size: 2vmin;
+  color: #006aff;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  button {
+    font-size: 0.9vmin;
+    padding: 8px 12px;
+  }
+}
+
+@font-face {
+  font-family: 'Retropix';
+  src: url('photos/retropix.ttf') format('truetype');
+}
